@@ -1,0 +1,82 @@
+/* Container */
+
+
+/* Navigacija */
+	#main-nav {
+
+		position: fixed;
+		opacity: 0.9;
+		max-height: 100px;
+		width: 100%;
+	}
+
+	#main-nav .linkovi {
+	padding-right: 10px;
+}
+
+	#main-nav .logo {
+		justify-self: flex-start;
+	}
+.logo {
+
+		width: 200px;
+		height: 100px;
+	}
+
+/* Header */
+
+#header:before {
+	width: 100%;
+}
+
+#header .header2  {
+	position: relative;
+	top: 150px;
+	left: 50px;
+	width: 50vw;
+	height: 60vh; }
+
+#header .header2 h1 {
+	
+	padding: .7rem;
+	
+}
+#header .header2 h2 {
+	padding: .7rem;
+	color: red;
+	width: 40vw;
+	border-radius: 15px;
+}
+#header .header2 p {
+	padding: .7rem;
+
+	font-weight: bold;
+	font-size: 1rem;
+}
+#header .header2 a {
+	color: red;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+
+
+/* Section */
+
+
+/* Galery */
+#main-section .galery {
+	width: 500px;
+	height: 350px; }
+
+#main-section .aside,
+#main-section .galery {
+	margin: 0 1rem;
+}
+
+/* Footer */
+
+#main-footer {
+	font-size: 1rem;
+	padding: .2rem;
+}

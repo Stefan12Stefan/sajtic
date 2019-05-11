@@ -1,0 +1,119 @@
+/* Container */
+
+
+/* Navigacija */
+	#main-nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		opacity: 0.9;
+		max-height: 120px;
+		width: 100%;
+	}
+
+	
+#main-nav .linkovi a {
+	color: var(--dark-color);
+	font-weight: bold;
+	font-size: .9rem;
+	padding: .5rem;
+}
+
+	#main-nav .logo {
+		justify-self: flex-start;
+	}
+.logo {
+
+		width: 200px;
+		height: 100px;
+	}
+
+/* Header */
+
+#header:before {
+	top: 120px;
+	width: 100%;
+}
+
+#header .header2  {
+	position: relative;
+	top: 150px;
+	left: 50px;
+	width: 50vw;
+	height: 60vh; }
+
+#header .header2 h1 {
+	font-size: 1rem;
+	
+}
+#header .header2 h2 {
+	display: none;
+}
+#header .header2 p {
+	display: none;
+}
+#header .header2 a {
+	color: red;
+	font-weight: bold;
+	font-size: .5rem;
+}
+
+
+
+/* Section */
+
+
+/* Galery */
+
+#main-section {
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#main-section .galery {
+	width: 300px;
+	height: 200px; }
+
+#main-section .aside {
+	padding: .5rem;
+	
+}
+
+#main-section .aside p {
+	
+	font-size: .6rem;
+	padding: 0 .3rem;
+}
+
+/* Footer */
+	
+	#main-footer h3 {
+		font-size: 1rem;
+	}
+
+	#main-footer p {
+		font-size: .7rem;
+	}
+
+	#main-footer > *:last-child {
+				grid-column: 1;
+				
+		}
+
+		#main-footer > 
+		*:first-child,
+		#main-footer > 
+		*:nth-child(2),
+		#main-footer > 
+		*:nth-child(3)
+		 {	
+		 	text-align: center;
+		 	align-self: center;
+		 	justify-self: center;
+			border-bottom: #444 dotted 1px;
+			padding-bottom: 1rem;
+
+		}
+}
