@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Pranje i Odrzavanje Izloga</title>
+</head>
+<body>
+
+<!-- Header -->
+
+ <div class="wrap">
+
+ 		<!-- Navigaija -->
+
+		<nav class="main-nav">
+		
+		<img src="img/logo/logo3.png" alt="SuperŠilja" class="logo">
+		<div class="media">
+			<p>Posetite nasu:
+				<br/>
+				<a href="http://facebook.com">
+				<img src="img/media/face.png" class="ikon">facebook
+				</a> i
+				<a href="http://instagram.com">
+					<img src="img/media/ins.png" class="ikon">instagram
+				</a> 
+					<br/>stranicu.
+			</p>
+		</div>
+
+		<ul class="linkovi">
+			<li><a href="index.html">Pocetna</a></li>
+			<li><a href="onama.html">O nama</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+		
+	</nav>
+
+	<header class="showcase">
+	
+		<div class="showcase-content">
+		<h1>PRANJE I ODRZAVANJE IZLOGA</h1>
+			<h2>SUPER SILJA = SUPER PRANJE</h2>
+			<p>Nudimo sirok opseg poslova,</br>
+						sa jos povoljnijim 
+						<span class="bold">cenama</span>. </p>
+						<p>Pogledajte sta imamo u <a href="#"><span class="bold">ponudi.</span></a></p>
+		</div>
+	
+ </header>
+
+<!-- Section	-->
+		<section class="main-section">
+			
+			
+			<figure class="galerija">
+				<figcaption><h1>Galerija</h1>
+				</figcaption>
+			
+  			</figure>
+  			
+		<!-- Aside -->
+
+  			<aside class="sidebar">
+			<h1>O NAMA</h1>
+			<a href="onama.html"><p>
+				Bavimo se ovim poslom preko 30 godina.
+				Saradjivali smo sa najvecim firmama u Srbiji.<br/>
+				Odlikuju nas tacnost, pedantnost...
+				Placanje preko racuna.<br/>
+				Pranje po pozivu;
+				ili odrzavanje na mesecnom nivou...
+			</p></a>
+			
+		</aside>
+  		
+		</section>
+ 	
+ 	<!-- Footer -->
+
+	 	<footer class="main-footer">
+
+				<div class="kontakt kontakt-1">
+					<h3>Kontaktirajte nas na vise nacina</h3>
+				<p>putem 
+					<a href="facebook">
+						<img src="img/media/face.png" alt="facebook" class="ikon">facebook-a</a>,
+
+					<a href="instagram.com"><img src="img/media/ins.png" alt="instagram" class="ikon">instagrama</a>,
+
+					<br/> putem e-meil-a ili pozivom,<br/>
+					tu smo uvek za vas.</p>
+				</div>
+
+
+				<div class="kontakt kontakt-2">
+					<h3>Email</h3>
+
+
+	 				<p>Sve sto vas zanima,</br>
+	 					mozete pitati putem<br/></p>
+	 				
+	 					<a class="btn" href="mailto:stefancrashing@gmail.com">E-mail-a.</a>
+	 				
+				</div>
+
+
+				<div class="kontakt kontakt-3">
+					<h3>Ili nas jednostavno pozovite</h3>
+	 				<p>na broj: 063/80-15-369.<br/>
+	 					<a class="btn" href="tel:+381-63-801-5369">Klikni i pozovi!</a></p>
+	 			
+				</div>
+
+		
+			
+				<div class="kontakt kontakt-4">
+					<address>
+						<a href="mailto:stefancrashing@gmail.com">Copyright &copy; Stefan 2019, All Rights Reserved</a>
+					</address>
+				</div>
+				
+			</footer>
+ 	
+ 	</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
