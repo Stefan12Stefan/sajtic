@@ -1,0 +1,307 @@
+:root {
+	--primary-color: #2a44c9;
+ 	--secondary-color:#444;
+ 	--light-color:#11bdfc;
+ 	--dark-color:#000;
+ 	--max-width: 1100px;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+a {
+	color: var(--dark-color);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+/* Utility */
+.logo {
+	width: 250px;
+	height: 100px;
+}
+
+.ikon {
+	width: 25px;
+	height: 25px;
+	vertical-align: sub;
+	padding: 2px;
+}
+
+.bold {
+	font-weight: bold;
+	color: red;
+}
+
+
+/* Media */
+
+/* Media 320px */
+
+@media (min-width: 320px) {
+	.wrap {
+		display: flex;
+		background-color: var(--light-color);
+		flex-wrap: wrap;
+		width: 100vw;
+		margin: 0 auto;
+	}
+
+
+/* Navigacija */
+	.media {
+		display: none;
+	}
+
+	.logo {
+	width: 175px;
+	height: 70px;
+}
+
+	.main-nav {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		width: 100vw;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+		background-color: var(--primary-color);
+		z-index: 2;
+	}
+
+	.main-nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.main-nav ul li {
+		list-style: none;
+		padding: 0 1rem;
+	}
+
+	.main-nav ul li a:hover {
+		background-color: var(--light-color);
+		color: var(--secondary-color);
+	}
+
+	/* Showcase */
+
+	.showcase {
+		display: flex;
+		align-items: center;
+		height: 80vh;
+
+	}
+
+	.showcase:before {
+			content: '';
+			background: url(../img/pozadi.jpg)
+			no-repeat center center/cover;
+			position: absolute;
+			left: 0;
+			width: 100vw;
+			height: 80vh;
+			opacity: 0.7;
+			
+
+	}
+
+	.showcase-content {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100vw;
+		left: 5%;
+		background-color: rgba(17, 189, 252, 0.4);
+		border-radius: 10px;
+		color: white;
+		z-index: 1;
+		
+	}
+
+	.showcase-content h1 {
+		font-size: 1.2rem;
+	}
+
+	.showcase-content h2 {
+		font-size: 1rem;
+	}
+
+	/* Sectiion */
+
+	.main-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		margin: 0 auto;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.main-section figcaption {
+		display: none;
+	}
+
+	.main-section figure {
+	margin: 1rem .5rem;
+}
+	
+
+	.main-section .galerija {
+	width: 300px;
+	height: 200px;
+		animation: myanimation 30s
+	 ease-in-out 0s infinite normal none;
+}
+
+ @keyframes myanimation {
+
+
+			0% {	
+
+			transform: scale(1);
+			background: url("../img/sajt/slika1.jpg");
+			background-size: 300px 200px;
+			}
+
+			10% {
+				transform: scale(1);
+				background: url("../img/sajt/slika5.jpg");
+				 background-size: 300px 200px;
+			}
+			20% {
+				transform: scale(1);
+				background: url("../img/sajt/slika6.jpg");
+				 background-size: 300px 200px;
+			}
+			30% {
+				transform: scale(1);
+				background: url("../img/sajt/slika7.jpg");
+				 background-size: 300px 200px;
+			}
+			40% {
+				transform: scale(1);
+				background: url("../img/sajt/slika8.jpg");
+				 background-size: 300px 200px;
+			}
+			50% {
+				transform: scale(1);
+				background: url("../img/sajt/slika9.jpg");
+				 background-size: 300px 200px;
+			}
+			60% {			
+					transform: scale(1);
+					background: url("../img/sajt/slika2.jpg");
+					 background-size: 300px 200px;
+					  
+			}
+
+			70% {
+				transform: scale(1);
+				background: url("../img/sajt/slika3.jpg");
+				 background-size: 300px 200px;
+				
+				}
+
+			80% {
+				transform: scale(1);
+				background: url("../img/sajt/slika4.jpg") ;
+				 background-size: 300px 200px;	
+			
+			}
+			90% {
+				transform: scale(1);
+				background: url("../img/sajt/slika10.jpg") ;
+				 background-size: 300px 200px;	
+			
+			}
+			100% {
+				transform: scale(1);
+				background: url("../img/sajt/slika11.jpg") ;
+			  background-size: 300px 200px;
+			}
+
+
+}
+
+	.main-section .sidebar {
+		text-align: center;
+		
+		
+	}
+
+
+
+
+	/* Footer */
+	.main-footer {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		background-color: var(--secondary-color);
+		color: white;
+		margin-top: 2rem;
+	}
+
+	.main-footer .kontakt {
+		text-align: center;
+		padding: 1rem auto;
+		margin: .5rem auto;
+	}
+
+	.main-footer .kontakt h1 {
+		font-size: 1rem;
+	}
+
+	.main-footer .kontakt p {
+		font-size: .9rem;
+	}
+
+	.main-footer .kontakt a {
+		background-color: var(--light-color);
+	border-radius: 2px;
+		font-size: .8rem;
+	}
+
+	.main-footer .kontakt .ikon {
+	width: 15px;
+	height: 15px;
+	vertical-align: sub;
+	padding: 2px;
+}
+	.main-footer .kontakt address {
+		font-size: .4rem;
+	}
+}
+
+@media (min-width: 600px) {
+
+}
